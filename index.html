@@ -11,9 +11,29 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	
     </head>
 
+    
+
 <body class="fundo">
-	<div th:replace="~{base :: logo}"></div>
+	<div th:fragment="logo">
+        <div class="p-3 d-flex justify-content-between">
+            <span>
+                <span class="titulo mt-2 ml-1">Website Incrível</span>
+                <br>
+                <span class="ml-5 subtitulo">Sistema que auxilia a checagem de aprendizado</span>
+            </span>
+        </div>
+    </div>
+    <!--Descrição partes principais do site-->
+    <div class="card mb-3 mt-4" style="background-color: #11baac">
+        <div>
+            <span class="titulo mt-2 ml-1">Sobre o Moodle</span>
+            <br>
+            <span class="ml-5 subtitulo">O Moodle é um sistema de gerenciamento de aprendizado baseado na web, usado para criar sites de cursos online. É um software de código aberto, desenvolvido sob a licença GNU General Public License. O Moodle é usado em todo o mundo para ensinar on-line, com mais de 100 milhões de usuários em mais de 200 países.</span>
+        </div>
+
+
+    </div>
 	
-	<h1>Produto</h1>
+	<h1>ProdutoA</h1>
 </body>
 </html>
