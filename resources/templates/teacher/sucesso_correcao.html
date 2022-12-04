@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head th:replace="~{base :: head}"/>
+
+<body class="fundo">
+	<div th:replace="~{base :: logo}"></div>
+	
+	<div class="container mt-5" >
+		<div class="card mb-3 mt-3" style="background-color: #F25A70">
+			
+				<div class="mt-2 texto-login">
+					<button class="mt-4 Sucesso">Prova corrigida com sucesso!</button>
+				</div>
+				
+				<div class="card-body">
+				<div class="mt-4 form-group">
+					<span class="texto-retro5"> - Nota atrbuída ao aluno:</span>
+					<span class="texto-retro4" th:text="${nota}"></span>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

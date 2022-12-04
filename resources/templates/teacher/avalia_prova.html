@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head th:replace="~{base :: head}"/>
+	
+	<body class="fundo">
+		<div th:replace="~{base :: logo}"></div>
+		
+		<div class="container mt-4">
+		
+			<div class="jumbotron mb-0 center">
+				<h1 class="titulo2">Provas Pendentes</h1>
+			</div>
+		
+			<div class="card mb-3 mt-3" th:each="resposta : ${respostas}" >
+				<div class="texto-retro3 card-header alert-dark" style="background-color: #8657DB"></div>
+				<div class="card-body" style="background-color: #11baac">
+					<div class="row">
+						<div class="col-12 col-sm-8 mb-3">
+							<div class="texto-retro12">Aluno</div>
+							<div class="mb-3">
+								<input class="texto-retro10 form-control" th:value="${resposta.nomeAluno}" value="nome do aluno" disabled/>
+							</div>
+							
+							<div class="texto-retro12">Prova</div>
+							<div>
+								<input class="texto-retro10 form-control" th:value="${resposta.nomeProva}" value="nome da prova" disabled/>
+							</div>
+						</div>
+					</div>
+					<div class="botao-login">
+						<a th:href="@{'/prova' + '/' + 'formAvaliarResposta' + '/' + ${resposta.id}}">
+							<button class="Entrar mt-3">Avaliar</button>
+						</a>
+					</div>
+				</div>			
+			</div>
+		</div>
+		
+	</body>
+</html>

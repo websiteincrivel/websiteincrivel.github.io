@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head th:replace="~{base :: head}"/>
+	
+	<body class="fundo">
+
+		<div th:replace="~{base :: logo}"></div>
+		
+		<div class="container mt-5" >
+			<div class="card mb-3 mt-3" style="background-color: #F25A70">
+				<div class="mt-4 texto-login">
+					<span class="login">Recuperar Senha</span>
+				</div>
+				
+				<form th:action="@{/recuperar}" class="card-body" method="post">
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="username">Email</label>
+	                	<input name="username" class="form-control" placeholder="endereço de email"/>
+	                	
+					</div>
+					
+					<div class="botao-login">
+						<button class="mt-4 Entrar" type="submit">Recuperar</button>
+					</div>
+				</	>				
+			</div>
+		</div>
+		
+		<footer class="texto-retro footer navbar-fixed-bottom">Todos os direitos reservados</footer> 
+	</body>
+</html>

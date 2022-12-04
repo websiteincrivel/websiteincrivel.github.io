@@ -1,0 +1,378 @@
+.fundo {
+	 background: #383732;
+}
+
+.fundo-roxo {
+	 background: #8657DB;
+}
+
+#corpo {
+	background-color: #383732;
+}
+
+.titulo {
+	font-family: 'Press Start 2P';
+    font-style: normal;
+    color: #F25A70;
+    font-size: 25px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.texto-retro {
+	font-family: 'Press Start 2P';
+	color: #F25A70;
+}
+
+.texto-retro3 {
+	font-family: 'Press Start 2P';
+	color: #383732;
+}
+
+.texto-retro11 {
+	font-family: 'Press Start 2P';
+	color: #11baac;
+	font-size: 20px;
+}
+
+.texto-retro12 {
+	font-family: 'Press Start 2P';
+	color: #F25A70;
+	font-size: 20px;
+}
+
+.texto-retro4 {
+	font-family: 'Press Start 2P';
+	color: #FFF;
+}
+
+.texto-retro5 {
+	font-family: 'Press Start 2P';
+	color: #11baac;
+}
+
+.texto-retro6 {
+	font-family: 'Press Start 2P';
+	color: #11baac;
+	font-size: 30px;
+}
+
+.texto-retro7 {
+	font-family: 'Fira Code';
+	color: #11baac;
+	font-size: 40px;
+}
+
+.texto-retro2 {
+	font-family: 'Fira Code';
+	color: #FFF;
+}
+
+.texto-retro10 {
+	font-family: 'Fira Code';
+	color: #383732;
+}
+
+.texto-retro100 {
+	font-family: 'Fira Code';
+	color: #383732;
+	font-size: 25px;
+}
+
+.texto-retro200 {
+	font-family: 'Press Start 2P';
+	color: #F25A70;
+}
+
+.titulo2 {
+	font-family: 'Press Start 2P';
+    font-style: normal;
+    color: #383732;
+    font-size: 25px;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.subtitulo{
+	font-size: 12px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    color: white
+    
+}
+
+.paragrafo{
+    position: absolute;
+    width: 671px;
+    height: 346px;
+    left: 600px;
+    top: 230px;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: justify;
+	font-size: 15px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    color: white
+}
+
+.acessar{
+    width: 143px;
+    height: 41px;
+}
+
+.cadastrar{
+    position: absolute;
+    width: 143px;
+    height: 41px;
+    left: 1150px;
+    top: 85px;
+}
+
+.capa{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 170px;
+    top: 200px;
+}
+
+.rodape {
+	font-family: 'Press Start 2P';
+	text-align: center;
+    font-style: normal;
+    color: #F25A70;
+    font-size: 10px;
+    top: 500px;
+}
+
+footer {
+	font-family: 'Press Start 2P';
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+
+.quadrado_login{
+    position: absolute;
+    width: 555px;
+    height: 427px;
+    left: 385px;
+    top: 150px;
+}
+
+.quadrado_cadastro{
+    position: absolute;
+    width: 555px;
+    height: 585px;
+    left: 385px;
+    top: 100px;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.lacuna_username{
+    position: absolute;
+    width: 504px;
+    height: 45px;
+    left: 407px;
+    top: 250px;
+
+    background: #363636;
+    box-shadow: 0px 0px 0px #000000;
+}
+.lacuna_password{
+    position: absolute;
+    width: 504px;
+    height: 45px;
+    left: 407px;
+    top: 350px;
+
+    background: #363636;
+    box-shadow: 0px 0px 0px #000000;
+    
+}
+
+::placeholder{
+	color: #706C6C;
+    width: 345px;
+    height: 15px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+
+
+    color: #FFFFFF;
+}
+
+.combo {
+	color: #706C6C;
+    width: 345px;
+    height: 15px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+
+
+    color: #FFFFFF;
+}
+
+.login {
+	font-family: 'Press Start 2P';
+	color: #FFF;
+	font-size: 30px;
+}
+
+.login2 {
+	font-family: 'Press Start 2P';
+	color: #8657DB;
+	font-size: 30px;
+}
+
+.login3 {
+	font-family: 'Fira Code';
+	color: #F25A70;
+	font-size: 30px;
+}
+
+.texto-login {
+	text-align: center;	
+}
+
+.texto-senha {
+	color: #0B23F8;
+	font-family: 'Press Start 2P';
+	font-size: 10px;
+}
+
+.botao-login {
+	text-align: center;
+}
+
+.texto-conta {
+	color: #FFF;
+}
+
+.Entrar{
+    width: 527px;
+    height: 41px;
+    background: #0B23F8;
+    box-shadow: 4px 4px 0px #000000;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.Entrar2{
+    width: 527px;
+    height: 41px;
+    background: #8657DB;
+    box-shadow: 4px 4px 0px #000000;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.Sucesso{
+    width: 527px;
+    height: 41px;
+    background: #B6E2A1;
+    box-shadow: 4px 4px 0px #000000;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.Criar{
+    width: 527px;
+    height: 41px;
+    background: #8fd053;
+    box-shadow: 4px 4px 0px #000000;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.Registrar{
+    position: absolute;
+    width: 504px;
+    height: 41px;
+    left: 415px;
+    top: 615px;
+
+    background: #0B23F8;
+    box-shadow: 4px 4px 0px #000000;
+
+ 
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    
+
+
+    color: #FFFFFF;
+}
+
+.cadastro1{
+    position: absolute;
+    width: 504px;
+    height: 45px;
+    left: 410px;
+    top: 225px;
+
+    background: #363636;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.cadastro2{
+    position: absolute;
+    width: 504px;
+    height: 45px;
+    left: 410px;
+    top: 350px;
+
+    background: #363636;
+    box-shadow: 0px 0px 0px #000000;
+}
+.cadastro3{
+    position: absolute;
+    width: 504px;
+    height: 45px;
+    left: 410px;
+    top: 480px;
+
+    background: #363636;
+    box-shadow: 0px 0px 0px #000000;
+}

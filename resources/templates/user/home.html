@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head th:replace="~{base :: head}"/>
+
+<body class="fundo">
+	<div th:replace="~{base :: logo}"></div>
+	
+	<div class="container mt-5" >
+		<div class="card mb-3 mt-3" style="background-color: #D9D9D9">
+			<div class="card-body">
+			
+			<div class="mt-4 texto-login">
+				<span class=texto-retro6>Seja bem-vindo!</span>
+				<br>
+				<span class="texto-retro100">Usuario logado (aluno)</span>
+				<br>
+				<span class=texto-retro200>Nome:</span>
+				<span class=texto-retro200 th:text="${nome}"></span>
+			</div>
+			
+			<div class="botao-login">
+				<a href="/aluno/verProvas">
+					<button class="mt-4 Entrar">Ver Provas</button>
+				</a>
+				
+				<br>
+				
+				<a href="/aluno/verNotas">
+					<button class="mt-4 Entrar">Ver Notas</button>
+				</a>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head th:replace="~{base :: head}"/>
+	
+	<body class="fundo">
+		<div th:replace="~{base :: logo}"></div>
+		
+		<div class="container">
+			
+			<div class="card mb-3 mt-4" style="background-color: #fff">
+				<div class="mt-4 texto-login">
+						<span class="login2">Respostas</span>
+				</div>
+			</div>
+		
+			<div class="card mb-3 mt-4" style="background-color: #11baac">
+				<form action="#" th:action="@{/prova/formAvaliarResposta}" th:object="${novaNotaRequest}" class="card-body" method="POST">
+					
+					<div class="mt-2 form-group">
+						<label th:text="'1 - ' + ${resposta.respostaQ1}" style="color: #030303" class="texto-retro3" for="avaliacaoQ1">a1</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ1}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ1}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'2 - ' + ${resposta.respostaQ2}" style="color: #030303" class="texto-retro3" for="avaliacaoQ2">a2</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ2}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ2}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'3 - ' + ${resposta.respostaQ3}" style="color: #030303" class="texto-retro3" for="avaliacaoQ3">a3</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ3}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ3}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'4 - ' + ${resposta.respostaQ4}" style="color: #030303" class="texto-retro3" for="avaliacaoQ4">a4</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ4}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ4}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'5 - ' + ${resposta.respostaQ5}" style="color: #030303" class="texto-retro3" for="avaliacaoQ5">a5</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ5}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ5}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'6 - ' + ${resposta.respostaQ6}" style="color: #030303" class="texto-retro3" for="avaliacaoQ6">a6</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ6}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ6}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'7 - ' + ${resposta.respostaQ7}" style="color: #030303" class="texto-retro3" for="avaliacaoQ7">a7</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ7}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ7}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'8 - ' + ${resposta.respostaQ8}" style="color: #030303" class="texto-retro3" for="avaliacaoQ8">a8</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ8}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ8}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'9 - ' + ${resposta.respostaQ9}" style="color: #030303" class="texto-retro3" for="avaliacaoQ9">a9</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ9}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ9}"></div> 
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label th:text="'10 - ' + ${resposta.respostaQ10}" style="color: #030303" class="texto-retro3" for="avaliacaoQ10">a10</label>
+	                	<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{avaliacaoQ10}" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="opcao : ${opcoes}" th:value="${opcao}" th:text="${opcao}"/>
+						</select>
+	                	<div class="invalid-feedback" th:errors="*{avaliacaoQ10}"></div> 
+					</div>
+					
+					<div class="botao-login">
+						<div id="emailHelp" class="mt-3 texto-senha form-text">
+							<button class="mt-4 Entrar" type="submit">Corrigir</button>
+						</div>
+					</div>
+				</form>				
+			</div>
+		</div>
+		
+	</body>
+</html>

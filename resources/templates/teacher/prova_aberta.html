@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head th:replace="~{base :: head}"/>
+	
+	<body class="fundo">
+		<div th:replace="~{base :: logo}"></div>
+		
+		<div class="container">
+			
+			<div class="card mb-3 mt-4" style="background-color: #fff">
+				<div class="mt-4 texto-login">
+						<span class="login2">Criar Prova - Questões Abertas</span>
+				</div>
+			</div>
+		
+			<div class="card mb-3 mt-4" style="background-color: #11baac">
+				<form action="#" th:action="@{/prova/formCriarProvaAberta}" th:object="${novaProvaAbertaRequest}" class="card-body" method="POST">
+					
+					<div class="mt-0 texto-login">
+						<span class="login3">Informações Gerais</span>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="nome">Nome</label>
+	                	<input th:field="*{nome}" th:errorclass="is-invalid" class="form-control" placeholder="nome da prova"/>
+	                	<div class="invalid-feedback" th:errors="*{nome}">
+	                		Erros do nome da prova
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="descricao">Descrição</label>
+	                	<input th:field="*{descricao}" th:errorclass="is-invalid" class="form-control" placeholder="descrição da prova"/>
+	                	<div class="invalid-feedback" th:errors="*{descricao}">
+	                		Erros da descricao da prova
+	                	</div>
+					</div>
+					
+					<div class="mt-4 form-group">
+						<label style="color: #030303" class="texto-retro3" for="disciplinas">Disciplina</label>
+						
+						<select style=" color: #706C6C;
+								    font-family: 'Fira Code';
+								    font-style: normal;
+								    font-weight: 400;
+								    font-size: 15px;
+								    line-height: 15px;
+								    font-weight: bold;"
+								    
+							th:field="*{disciplina}" name="disciplinas" class="form-control form-select form-select-lg mb-3"
+							th:errorclass="is-invalid">
+							
+						  	<option th:each="d : ${disciplinas}" th:value="${d}" th:text="${d}"/>
+						</select>
+						<div class="invalid-feedback" th:errors="*{disciplina}">
+	                		Erros do combo
+	                	</div>
+					</div>
+					
+					<div class="mt-4 texto-login">
+						<span class="login3">Questões</span>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao1">Questão 1</label>
+	                	<input th:field="*{questao1}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da primeira questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao1}">
+	                		Erros da questao 1
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao2">Questão 2</label>
+	                	<input th:field="*{questao2}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da segunda questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao2}">
+	                		Erros da questao 2
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao3">Questão 3</label>
+	                	<input th:field="*{questao3}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da terceira questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao3}">
+	                		Erros da questao 3
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao4">Questão 4</label>
+	                	<input th:field="*{questao4}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da quarta questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao4}">
+	                		Erros da questao 4
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao5">Questão 5</label>
+	                	<input th:field="*{questao5}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da quinta questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao5}">
+	                		Erros da questao 5
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao6">Questão 6</label>
+	                	<input th:field="*{questao6}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da sexta questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao6}">
+	                		Erros da questao 6
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao7">Questão 7</label>
+	                	<input th:field="*{questao7}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da sétima questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao7}">
+	                		Erros da questao 7
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao8">Questão 8</label>
+	                	<input th:field="*{questao8}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da oitava questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao8}">
+	                		Erros da questao 8
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao9">Questão 9</label>
+	                	<input th:field="*{questao9}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da nona questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao9}">
+	                		Erros da questao 9
+	                	</div>
+					</div>
+					
+					<div class="mt-2 form-group">
+						<label style="color: #030303" class="texto-retro3" for="questao10">Questão 10</label>
+	                	<input th:field="*{questao10}" th:errorclass="is-invalid" class="form-control" placeholder="enunciado da décima questão"/>
+	                	<div class="invalid-feedback" th:errors="*{questao10}">
+	                		Erros da questao 10
+	                	</div>
+					</div>
+					
+					<div class="botao-login">
+						<div id="emailHelp" class="mt-3 texto-senha form-text">
+							<button class="mt-4 Entrar" type="submit">Criar</button>
+						</div>
+					</div>
+				</form>				
+			</div>
+		</div>
+		
+	</body>
+</html>
