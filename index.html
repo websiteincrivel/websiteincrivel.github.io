@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head th:replace>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Moodle Website Incrivel</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<head th:replace="~{base :: head}"/>
+	
+	<body class="fundo">
+		<div th:replace="~{base :: logo}"></div>
+		
+		<div class="container">
+			
+			<div class="card mb-3 mt-3" style="background-color: #11baac">
+				<div class="mt-4 texto-login">
+					<span class="login">Descrição do Produto</span>
 
+				</div>
+                
 
-<!-- Página explicando produto-->
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Produto</h1>
-                <p>O nosso produto tem como objetivo facilitar a criação e correção de atividades promovendo a interação entre diferentes usuários (professores e alunos).</p>
-            </div>
-        </div>
-    </div>
-</body>
-    
+				
+							
+			</div>
+		</div>
+		
+	</body>
 </html>
